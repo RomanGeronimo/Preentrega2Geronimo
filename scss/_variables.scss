@@ -1,0 +1,34 @@
+$color-p:#eb2020;
+$color-s: #fec10b;
+$color-t: #FFFFFF;
+
+$fuente-ch:14px;
+$fuente-md:20px;
+$fuente-gd:30px;
+$icono-ch:40px;
+$icono-gde:60px;
+
+$resolu-mob:400px;
+$resolu-desk:830px;
+$resolu-xl:1200px;
+ 
+$espacio-ch:15px;
+$espacio-md:25px;
+
+$font-p:'Merriweather Sans', sans-serif;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    
+}

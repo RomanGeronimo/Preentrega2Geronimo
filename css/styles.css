@@ -1,238 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    background-color: red;
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background-color: #eb2020;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  gap: 15px;
 }
 
 header img {
-    max-width: 100%;
-    
+  max-width: 100%;
+  width: 200px;
 }
 
-ul{
-    list-style: none;
+header a {
+  font-size: 30px;
+  color: #FFFFFF;
+  justify-content: center;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-@media (min-width:830px ) {
-    nav ul {display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        gap: 15px;}
-}
-.formulario{
-    
-        display: flex;
-        flex-direction: column;
-        font-family: sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 10px 20px;
-    
-   
-    
-}
-@media (min-width:700px ){
-    .formulario{
-        display: flex;
-        flex-direction: row;
-    }
-    
-
-
-}
-@media (min-width:1234px)
-{
-    h1{
-        display: flex;
-        text-align: center;
-        font-size: 80px;
-    }
-    
+header {
+  background-color: #eb2020;
 }
 
-a{
-    text-decoration: none;
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: sticky;
+  top: none;
+  list-style: none;
 }
 
-li a{
-    color: blanchedalmond;
-    font-family:sans-serif;
-    font-size: large;
-    padding: 5px 10px;
+.art-padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-h3{
-    display: flex;
-    justify-content:center ;
-    color: blanchedalmond;
-    font-family: sans-serif;
+.art {
+  width: 200px;
+  background-color: #fec10b;
+  color: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.parrafo-row1{
+animation-duration: 2s;
+animation-name: aparecer;
+animation-iteration-count: initial;
+}
+.parrafo-row2{
+  animation-duration: 4s;
+animation-name: aparecer;
+animation-iteration-count: initial
 
 }
-    
-img{
-    display: inline-block;
-    max-width: 100%;
-    width: 200px;
-    gap: 20px;
-    
-    
-
+.parrafo-row3{
+  animation-duration: 6s;
+  animation-name: aparecer;
+  animation-iteration-count: initial
 }
-.validez{
-    font-family: sans-serif;
-
-
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
-
-
-h2{
-    text-align: center;
-    font-family: sans-serif;
-    color: blanchedalmond;
-    float: none;
-
-}
-.ubi{
-    font-size:15px;
-    font-family:  sans-serif;
-    color: beige;
-}
-    
- .art-padre{
-
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
- }
- .art{
-    width: 200px;
-    background-color: rgba(241, 245, 4, 0.911);
-    color: rgba(7, 5, 5, 0.993);
-    padding: 15px;
-    display: flex;
-    flex-direction:column;
-
- }
- p{
-text-align: center;
-color: blanchedalmond;
-    font-family: sans-serif;
- }
-.art button{
-    border: none;
-    padding: 10px;
-    font-weight: bolder;
-}
-
-
-.bannr
-{
-background-image: url(../img/bann2.jpg);
-background-size:cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-height: 300px;
-width: 100%;
-}
-
-#grilla{
- display: grid;
- grid-template-areas: 
- "header header header"
- "main main main"
- "section section section"
- "footer footer footer";
- grid-template-columns: 1fr;
- grid-template-rows: repeat(4, 1fr) ;
- height: 100vh;
-
-}
-
-header{
-    grid-area: header;
-    background-color: rgb(235, 32, 32);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    top: 0;   }
-main#of.semana{
-    grid-area: section;
-    display: grid;
-    
-
-
-}
-section#ubicacion{
-    grid-area: section ;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-footer{
-    grid-area: footer;
-    background-color: rgb(235, 32, 32);
-    
-}
-footer div{
-    font-weight: 30px;
-    
-}
-
-.border{
-    border: 2px solid black;
-    
-}
-    
-#gridnav {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "h1 h1 h1"
-    "main main main"
-    "footer footer footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr) ;
-    height: 100vh;
-    
-
-
-}
-h1{
-    grid-area: h1 ;
-    display: flex;
-    justify-content:center ;
-    color: blanchedalmond;
-    font-family: sans-serif;
-}
-main#artnav{
-    grid-area: main;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
-
-    
-
-
-    
-    
-
-
-
+/*# sourceMappingURL=styles.css.map */

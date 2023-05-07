@@ -1,0 +1,55 @@
+body{
+    font-family: $font-p;
+    background-color: $color-p;
+    text-align: center;
+    font-size: $fuente-md;
+    color: $color-t;
+    gap: $espacio-ch;
+}
+header img{
+
+    max-width: 100%;
+    width: 200px;
+    
+}
+header a{
+    font-size: $fuente-gd;
+    color: $color-t;
+    justify-content: center;
+
+}
+header{
+    background-color: $color-p;
+
+}
+
+.nav{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: none;
+    list-style: none;
+}
+
+.art-padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+ }
+
+ .art{
+    width: 200px;
+    background-color: $color-s;
+    color: $color-t;
+    padding: 15px;
+    display: flex;
+    flex-direction:column;
+
+ }
+ 
