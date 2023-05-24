@@ -41,7 +41,34 @@ header {
   gap: 20px;
 }
 
-.art {
+.art-cp{
+  width: 200px;
+  background-color: #fec10b;
+  color: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.art-cs {
+  width: 200px;
+  background-color: #fec10b;
+  color: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.art-ct {
+  width: 200px;
+  background-color: #fec10b;
+  color: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.art-cc {
   width: 200px;
   background-color: #fec10b;
   color: #FFFFFF;
@@ -74,3 +101,50 @@ animation-iteration-count: initial
   }
 }
 /*# sourceMappingURL=styles.css.map */
+.cont-opciones{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction:row;
+}
+@media (max-width:523px ){
+  .cont-opciones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction:column;}
+
+}
+.cont-opciones label {
+  cursor: pointer;
+  padding: 8px;
+  
+}
+#art-p, #art-s, #art-t,#art-c, #dseleccion {
+  display: none;
+}
+.art-cp, .art-cs, .art-ct, .art-cc {
+  display: none;
+}
+
+#art-p:checked ~ .art-padre .art-cp {
+  display: flex;
+}
+
+#art-s:checked ~ .art-padre .art-cs {
+  display: flex;
+}
+
+#art-t:checked ~ .art-padre .art-ct {
+  display: flex;
+}
+
+#art-c:checked ~ .art-padre .art-cc {
+  display: flex;
+}
+#dseleccion:checked ~ .art-padre .art-cp,
+#dseleccion:checked ~ .art-padre .art-cs,
+#dseleccion:checked ~ .art-padre .art-ct,
+#dseleccion:checked ~ .art-padre .art-cc {
+  display: flex;
+}
